@@ -5,31 +5,59 @@
 }
 
 .login_container {
-    max-width: 450px;
-    width: 90%;
+    width: fit-content;
+    height: fit-content;
     margin: auto;
     background: rgba(255, 255, 255, 1);
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
     border-radius: 10px;
-
+    align-content: center;
+align-self: center;
 
 }
 
-flex_container {
+label{
+    margin: 0.5em 1em;
+    
+}
+input{
+    margin: 0.5em 1em;
+    padding: 10px;
+    border: 1.5px solid rgb(1, 1, 23);
+    border-radius: 0.5rem;
+    width: 300px;
+
+}
+
+#logo{
+    height: 100px;
+    width: 350px;
+    
+}
+
+.flex_container-r {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
 
 }
-
-body {
-    height: 1vh;
-    background-image: url(../images/manipal.jpg);
-    color: var(--text-color);
-
+.flex_container-c {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
-
+body {
+    height: 100vh;
+    background-image: url(../images/Manipal2.jpg);
+    color: var(--text-color);
+    font-size: large;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 100%;
+    
+    
+}
 h1 {
     text-align: center;
 }
@@ -38,4 +66,14 @@ header {
     background-color: var(--primary-color);
 }
 
-div {}
+#button{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+main {
+    height: 100%;
+}
+
+div {
+    align-items: center;
+}
