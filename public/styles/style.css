@@ -9,7 +9,7 @@
     height: fit-content;
     margin: auto;
     background: rgba(255, 255, 255, 1);
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     box-sizing: border-box;
     border-radius: 10px;
     align-content: center;
@@ -85,7 +85,7 @@ header {
     border-radius: 7px;
     background-color: #ffb703;
    border-color: #d4c386;
-   padding: 10px 30px 10px 30px;
+   padding: 10px 35px 10px 35px;
    font-size: 15px;
    font-weight: 525;
    font-style: inherit;
