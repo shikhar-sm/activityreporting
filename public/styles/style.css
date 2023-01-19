@@ -25,7 +25,7 @@ flex_container {
 
 body {
     height: 1vh;
-    background-image: url(/images/manipal.jpg);
+    background-image: url(../images/manipal.jpg);
     color: var(--text-color);
 
 }
