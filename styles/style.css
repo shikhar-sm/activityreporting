@@ -1,4 +1,41 @@
 :root {
     --primary-color: #ffb703;
     --secondary-color: #f1faee;
+    --text-color: #010d19;
+}
+
+.login_container {
+    max-width: 450px;
+    width: 90%;
+    margin: auto;
+    background: rgba(255,255,255,1);
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+    
+}
+
+flex_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+body{
+    height: 1vh;
+    background-image: url(../images/manipal.jpg) ;
+    color: var(--text-color);
+    
+}
+h1{
+    text-align: center;
+}
+
+header{
+    background-color:var(--primary-color);
+}
+
+div{
+
 }
