@@ -4,11 +4,11 @@ const port = 3000
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.send(index.html)
+    res.sendFile(index.html)
 })
 
-app.get('*', (req, res) => {
-    res.send(error.html)
+app.post('/upload', (req, res) => {
+
 })
 
 app.listen(port, () => {
