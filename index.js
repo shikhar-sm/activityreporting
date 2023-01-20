@@ -47,6 +47,10 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/login.html')
 })
 
+app.get('/index.html', (req, res) => {
+    res.sendFile(__dirname + '/login.html')
+})
+
 app.get('/summary', (req, res) => {
     res.sendFile(__dirname + '/summary.xlsx')
 })
@@ -92,7 +96,7 @@ app.post('/upload', (req, res) => {
         app.locals.evname,
         app.locals.evdate,
         app.locals.nat,
-        app.locals.filname,
+        'http://localhost:' + port + '/' + app.locals.filname,
         app.locals.edate
     ]
     var workbook = new Excel.Workbook();
@@ -112,7 +116,7 @@ app.post('/upload', (req, res) => {
     console.log(app.locals.oname)
     console.log(app.locals.evname)
     console.log(app.locals.edate)
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(__dirname + '/uploaded.html')
 })
 //lV142eAUaQTcnV1y
 

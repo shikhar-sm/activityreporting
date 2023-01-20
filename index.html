@@ -19,27 +19,27 @@
             <form action="upload" method="post" enctype="multipart/form-data">
                 <div>
                     <label for="oname">Organizing person / Department: </label><br>
-                    <input type="text" name="oname" id="oname" />
+                    <input type="text" name="oname" id="oname" required />
                 </div>
 
                 <div>
                     <label for="evname">Activity name:</label><br>
-                    <input type="text" name="evname" id="evname">
+                    <input type="text" name="evname" id="evname" required>
                 </div>
 
                 <div>
                     <label for="evdate">Event date: </label><br>
-                    <input type="date" name="evdate" id="evdate" />
+                    <input type="date" name="evdate" id="evdate" required />
                 </div>
 
                 <div>
                     <label for="nat">Number of attendees: </label><br>
-                    <input type="number" name="nat" id="nat" />
+                    <input type="number" name="nat" id="nat" required />
                 </div>
 
                 <div>
-                    <label for="fil">Report: </label><br>
-                    <input type="file" name="fil" id="fil" accept=".pdf" />
+                    <label for="fil">Report (pdf only): </label><br>
+                    <input type="file" name="fil" id="fil" accept=".pdf" required />
                 </div>
                 <br>
                 <div id="button">
