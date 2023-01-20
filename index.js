@@ -8,6 +8,7 @@ const path = require('path')
 const port = 3000
 
 const Excel = require('exceljs')
+const exp = require('constants')
 
 /*const mongoose = require('mongoose');
 
@@ -40,10 +41,23 @@ app.use(fileUpload())
 var urlencodedParser = bodyParser.urlencoded({ extended: true })
 
 app.use(express.static('public'))
+app.use(express.static('uploads'))
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/login.html')
 })
+
+app.get('/summary', (req, res) => {
+    res.sendFile(__dirname + '/summary.xlsx')
+})
+
+/*app.get('/*.pdf', (req, res) => {
+    console.log(req.baseUrl)
+    res.sendFile(__dirname + '/uploads/' + req.baseUrl, function (err) {
+        if (err)
+            return res.status(404).send()
+    })
+})*/
 
 app.get('*', (req, res) => {
     res.sendFile(__dirname + '/error.html')
