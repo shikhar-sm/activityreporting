@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="public/styles/style2.css">
     <title>Login Details</title>
 </head>
 
@@ -13,7 +13,7 @@
     <main class="flex_container-r">
         <article class='login_container flex_container-c'>
             <div>
-                <img id=logo src="images/logo.png" alt="Manipal logo">
+                <img id=logo src="public/images/logo.png" alt="Manipal logo">
             </div>
             <br>
             <form action="login" method="post" enctype="application/x-www-form-urlencoded">
@@ -21,13 +21,17 @@
                     <label for="uname">Username :</label><br>
                     <input type="email" name="uname" id="uname" required />
                 </div>
+                <div>
+                    <label for="password">Password :</label><br>
+                    <input type="password" name="password" id="password" required />
+                </div>
                 <br>
                 <div id="button">
                     <button id="button2" type="submit">Login</button>
                 </div>
                 <br>
-                
-               
+
+
             </form>
             <footer>
                 <a id='button' href="/summary">View summary</a>
